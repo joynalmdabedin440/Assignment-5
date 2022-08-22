@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Favorite Five Player Select for Team up</title>
+    <title>Favorite Five Player Choose for Team up</title>
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- daisyUI cdn -->
@@ -15,7 +15,7 @@
 <body>
     <header>
         <div class="bg-black text-center p-24 ">
-            <h1 class="text-4xl font-bold text-orange-400 ">Select Your Favorite Five Player For strong TeamUp</h1>
+            <h1 class="text-4xl font-bold text-orange-400 ">Choose Your Favorite Five Player For strong TeamUp</h1>
             <p class="text-white mt-7 ">The following factors are considered for all age groups: Physical Ability: we
                 are looking at running, jumping, strength and agility. Coachability: how well does the player pay
                 attention, listen to the coach and apply instructions. Attitude: we are looking for positive, committed
@@ -39,7 +39,7 @@
                         <h2 class="card-title text-xl font-bold text-white">Ronaldo</h2>
                         <p class="text-white">40 Goals . 120 Assist</p>
                         <div class="card-actions">
-                            <button class="btn btn-primary border-0 bg-blue-600 w-80">Select</button>
+                            <button class="btn btn-primary border-0 bg-blue-600 w-64">Select</button>
                         </div>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
                         <h2 class="card-title text-xl font-bold text-white">Neymar Jr</h2>
                         <p class="text-white">36 Goals . 122 Assist</p>
                         <div class="card-actions">
-                            <button class="btn btn-primary border-0 bg-blue-600 w-80">Select</button>
+                            <button class="btn btn-primary border-0 bg-blue-600 w-64">Select</button>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                         <h2 class="card-title text-xl font-bold text-white">Thiago Silva</h2>
                         <p class="text-white">10 Goals . 80 Assist</p>
                         <div class="card-actions">
-                            <button class="btn btn-primary border-0 bg-blue-600 w-80">Select</button>
+                            <button class="btn btn-primary border-0 bg-blue-600 w-64">Select</button>
                         </div>
                     </div>
                 </div>
@@ -78,7 +78,7 @@
                         <h2 class="card-title text-xl font-bold text-white"> Lewandowski</h2>
                         <p class="text-white">35 Goals . 110 Assist</p>
                         <div class="card-actions">
-                            <button class="btn btn-primary border-0 bg-blue-600 w-80">Select</button>
+                            <button class="btn btn-primary border-0 bg-blue-600 w-64">Select</button>
                         </div>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
                         <h2 class="card-title text-xl font-bold text-white">Karim Benzema</h2>
                         <p class="text-white">32 Goals . 98 Assist</p>
                         <div class="card-actions">
-                            <button class="btn btn-primary border-0 bg-blue-600 w-80">Select</button>
+                            <button class="btn btn-primary border-0 bg-blue-600 w-64">Select</button>
                         </div>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
                         <h2 class="card-title text-xl font-bold text-white">Lionel Messi</h2>
                         <p class="text-white">39 Goals . 122 Assist</p>
                         <div class="card-actions">
-                            <button class="btn btn-primary border-0 bg-blue-600 w-80">Select</button>
+                            <button class="btn btn-primary border-0 bg-blue-600 w-64">Select</button>
                         </div>
                     </div>
                 </div>
@@ -118,9 +118,46 @@
                 <div class="w-64 h-96 bg-black rounded ml-2 p-3 text-white">
                     <h1 class="text-2xl font-semibold text-center">selected-<span>5</span></h1>
                 </div>
+
+                <!-- budget for buy player -->
+                <div class="w-64  bg-black rounded ml-2 mt-7 p-3 text-white">
+                    <h1 class="text-2xl font-semibold text-center mb-5">Budget</h1>
+
+                    <div>
+                        <div class="flex justify-between">
+                            <p>Per Player</p>
+                            <input class="bg-black border" type="text" size="15">
+                        </div>
+                        <button class=" btn-primary border-0 bg-blue-600 w-full my-4 py-2">Calculate</button>
+
+                        <h2>Player Expense :- $<span>5000</span></h2>
+
+                        <div class="flex justify-between my-3">
+                            <p>Manager</p>
+                            <input class="bg-black border" type="text" size="15">
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Coach</p>
+                            <input class="bg-black border" type="text" size="15">
+                        </div>
+                        <button class=" btn-primary border-0 bg-blue-600 w-full my-4 py-2">Calculate Total</button>
+
+                        <div class="flex justify-between">
+                            <p>Total</p>
+                            <p class="text-orange-600">$<span>1000</span></p>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
             </div>
 
+
+
         </section>
+
     </main>
 
 
