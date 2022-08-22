@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,14 +11,144 @@
     <!-- daisyUI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
-  <header>
-    <div class="bg-black text-center p-24 ">
-        <h1 class="text-4xl font-bold text-orange-400 ">Select Your Favorite Five Player For strong TeamUp</h1>
-        <p class="text-white mt-7 ">The following factors are considered for all age groups: Physical Ability: we are looking at running, jumping, strength and agility. Coachability: how well does the player pay attention, listen to the coach and apply instructions. Attitude: we are looking for positive, committed and focused players.</p>
-    </div>
-  </header>
 
-  
+<body>
+    <header>
+        <div class="bg-black text-center p-24 ">
+            <h1 class="text-4xl font-bold text-orange-400 ">Select Your Favorite Five Player For strong TeamUp</h1>
+            <p class="text-white mt-7 ">The following factors are considered for all age groups: Physical Ability: we
+                are looking at running, jumping, strength and agility. Coachability: how well does the player pay
+                attention, listen to the coach and apply instructions. Attitude: we are looking for positive, committed
+                and focused players.</p>
+        </div>
+    </header>
+    <!--main section -->
+    <main>
+        <!-- player section -->
+        <section class="  flex mt-20  mx-8 mb-20">
+
+            <!-- selection button -->
+            <div class="grid grid-cols-3 gap-4">
+
+                <!-- player-1 -->
+                <div class="card w-full bg-black border-2 border-slate-300 ">
+                    <figure class=" ">
+                        <img class="w-full h-52" src="image/img1.jpg" alt="" class="" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-xl font-bold text-white">Ronaldo</h2>
+                        <p class="text-white">40 Goals  .  120 Assist</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary border-0 bg-blue-600 w-80">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- player-2 -->
+                <div class="card w-full bg-black border-2 border-slate-300 ">
+                    <figure >
+                        <img  class=" w-full h-52 " src="image/img2.jpg" alt="" class="" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-xl font-bold text-white">Neymar Jr</h2>
+                        <p class="text-white">36 Goals  .  122 Assist</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary border-0 bg-blue-600 w-80">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- player-3 -->
+                <div class="card w-full bg-black border-2 border-slate-300 ">
+                    <figure class=" ">
+                        <img class="w-full h-52" src="image/img3.jpg" alt="" class="" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-xl font-bold text-white">Thiago Silva</h2>
+                        <p class="text-white">10 Goals  .  80 Assist</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary border-0 bg-blue-600 w-80">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- player-4 -->
+                <div class="card w-full bg-black border-2 border-slate-300 ">
+                    <figure >
+                        <img class="w-full h-52" src="image/img4.jpg" alt="" class="" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-xl font-bold text-white"> Lewandowski</h2>
+                        <p class="text-white">35 Goals  .  110 Assist</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary border-0 bg-blue-600 w-80">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- player-5 -->
+                <div class="card w-full bg-black border-2 border-slate-300 ">
+                    <figure class=" ">
+                        <img class="w-full h-52" src="image/img5.jpg" alt="" class="" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-xl font-bold text-white">Karim Benzema</h2>
+                        <p class="text-white">32 Goals  .  98 Assist</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary border-0 bg-blue-600 w-80">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- player-6 -->
+                <div class="card w-full bg-black border-2 border-slate-300 ">
+                    <figure class=" ">
+                        <img class="w-full h-52" src="image/img6.jpg" alt="" class="" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-xl font-bold text-white">Lionel Messi</h2>
+                        <p class="text-white">39 Goals  .  122 Assist</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary border-0 bg-blue-600 w-80">Select</button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+          
+
+            <!-- selected player -->
+            <div>
+                <div class="overflow-x-auto">
+                    <table class="table w-full">
+                      <!-- head -->
+                      <thead class="text-center">
+                        <h2></h2>
+                      </thead>
+                      <tbody>
+                        <!-- row 1 -->
+                        <tr>
+                          <th>1</th>
+                          <td>Cy Ganderton</td>
+                          
+                        </tr>
+                        <!-- row 2 -->
+                        <tr>
+                          <th>2</th>
+                          <td>Hart Hagerty</td>
+                          
+                        </tr>
+                        <!-- row 3 -->
+                        <tr>
+                          <th>3</th>
+                          <td>Brice Swyre</td>
+                
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+            </div>
+
+        </section>
+    </main>
+
+
 </body>
+
 </html>
