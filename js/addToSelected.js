@@ -24,7 +24,6 @@ function addToSelected(selectedName) {
 
     if (selectedPlayerLength > 5) {
         alert('You Can\'t add more Player!!!')
-
         return selectedPlayerLength;
     }
     selectedName.disabled = true;
