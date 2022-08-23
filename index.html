@@ -39,7 +39,7 @@
                         <h2 id="player-1-name" class="card-title text-xl font-bold text-white">Ronaldo</h2>
                         <p class="text-white">40 Goals . 120 Assist</p>
 
-                        <div class="card-actions"> 
+                        <div  class="bg-blue-100 rounded-lg bg-blue-100 rounded-lg card-actions"> 
                             <button class="btn btn-primary border-0 bg-blue-600 w-64" onclick="addToSelected(this)" >Select</button>
                         </div> 
                     </div>
@@ -52,8 +52,8 @@
                     <div class="card-body items-center text-center">
                         <h2 class="card-title text-xl font-bold text-white">Neymar Jr</h2>
                         <p class="text-white">36 Goals . 122 Assist</p>
-                        <div class="card-actions">
-                            <button class="btn btn-primary border-0 bg-blue-600 w-64" onclick="addToSelected(this)" >Select</button>
+                        <div class="bg-blue-100 rounded-lg card-actions">
+                            <button  class="btn btn-primary border-0 bg-blue-600 w-64" onclick="addToSelected(this)" >Select</button>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                     <div class="card-body items-center text-center">
                         <h2 class="card-title text-xl font-bold text-white">Thiago Silva</h2>
                         <p class="text-white">10 Goals . 80 Assist</p>
-                        <div class="card-actions">
+                        <div class="bg-blue-100 rounded-lg card-actions">
                             <button class="btn btn-primary border-0 bg-blue-600 w-64" onclick="addToSelected(this)" >Select</button>
                         </div>
                     </div>
@@ -78,7 +78,7 @@
                     <div class="card-body items-center text-center">
                         <h2 class="card-title text-xl font-bold text-white"> Lewandowski</h2>
                         <p class="text-white">35 Goals . 110 Assist</p>
-                        <div class="card-actions">
+                        <div class="bg-blue-100 rounded-lg card-actions">
                             <button class="btn btn-primary border-0 bg-blue-600 w-64" onclick="addToSelected(this)" >Select</button>
                         </div>
                     </div>
@@ -91,7 +91,7 @@
                     <div class="card-body items-center text-center">
                         <h2 class="card-title text-xl font-bold text-white">Karim Benzema</h2>
                         <p class="text-white">32 Goals . 98 Assist</p>
-                        <div class="card-actions">
+                        <div class="bg-blue-100 rounded-lg card-actions">
                             <button class="btn btn-primary border-0 bg-blue-600 w-64" onclick="addToSelected(this)" >Select</button>
                         </div>
                     </div>
@@ -104,7 +104,7 @@
                     <div class="card-body items-center text-center">
                         <h2 class="card-title text-xl font-bold text-white">Lionel Messi</h2>
                         <p class="text-white">39 Goals . 122 Assist</p>
-                        <div class="card-actions">
+                        <div class="bg-blue-100 rounded-lg card-actions">
                             <button class="btn btn-primary border-0 bg-blue-600 w-64" onclick="addToSelected(this)" >Select</button>
                         </div>
                     </div>
@@ -117,8 +117,8 @@
             <!-- selected player -->
             <div>
                 <div class="w-64 h-96 bg-black rounded ml-2 p-3 text-white">
-                    <h1 class="text-2xl font-semibold text-center">selected-<span id="selected-index" class="text-yellow-300 text-3xl">0</span></h1>
-                    <table id="selected-player-table">
+                    <h1 class="text-2xl font-semibold text-center">selected-<span id="selected-index" class="text-yellow-400 text-3xl">0</span></h1>
+                    <table id="selected-player-table" class="mx-auto mt-10 text-center">
 
                     </table>
                 </div>
@@ -128,40 +128,37 @@
                     <h1 class="text-2xl font-semibold text-center mb-5">Budget</h1>
 
                     <div>
+                    <!-- plyer total coast calculate -->
                         <div class="flex justify-between">
                             <p>Per Player</p>
                             <input id="player-input-field" class="bg-black border" type="text" size="15">
                         </div>
                         <button id="player-calculate-btn" class=" btn-primary border-0 bg-blue-600 w-full my-4 py-2">Calculate</button>
 
-                        <h2>Player Expense :- $<span>5000</span></h2>
+                        <h2>Player Expense :- $<span class="text-yellow-300 font-semibold " id="player-expense">000</span></h2>
+
+
+                    <!-- manager and coach expense calculate -->
 
                         <div class="flex justify-between my-3">
                             <p>Manager</p>
-                            <input class="bg-black border" type="text" size="15">
+                            <input id="manager-input-field" class="bg-black border" type="text" size="15">
                         </div>
                         <div class="flex justify-between">
                             <p>Coach</p>
-                            <input class="bg-black border" type="text" size="15">
+                            <input id="coach-input-field" class="bg-black border" type="text" size="15">
                         </div>
-                        <button class=" btn-primary border-0 bg-blue-600 w-full my-4 py-2">Calculate Total</button>
+                        <button id="total-calculate-btn" class=" btn-primary border-0 bg-blue-600 w-full my-4 py-2">Calculate Total</button>
 
+                        <!-- total expense for making a team -->
                         <div class="flex justify-between">
                             <p>Total</p>
-                            <p class="text-orange-600">$<span>1000</span></p>
+                            <p class="text-orange-600">$<span id="total-coast">000</span></p>
                         </div>
-
-
                     </div>
-
-
                 </div>
             </div>
-
-
-
         </section>
-
     </main>
     <script src="js/addToSelected.js"></script>
     <script src="js/utilities.js"></script>

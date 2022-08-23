@@ -1,19 +1,16 @@
 
 const selectedPlayer = [];
-const selectedPlayerLength = selectedPlayer.length;
-
-
 function showAsSelected(playerName) {
     const selectedPlayerTable = document.getElementById('selected-player-table');
     selectedPlayerTable.innerHTML = '';
-
     for (let i = 0; i < selectedPlayer.length; i++){
         const name = selectedPlayer[i]
         const tr = document.createElement('tr');
         tr.innerHTML = `
         <th>${i + 1}</th>
         <td>${name}`;
-        selectedPlayerTable.appendChild(tr)
+        selectedPlayerTable.appendChild(tr);
+       
     }
 }
  
@@ -27,7 +24,12 @@ function addToSelected(selectedName) {
     if (selectedPlayerLength>5) {
        alert('You Can\'t add more Player!!!')
        return selectedPlayerLength;
-   }
+    }
+    
+    selectedName.disabled = true;
+    
     selectedIndex.innerText = selectedPlayerLength;
     showAsSelected(playerName);
+
+    
 }
